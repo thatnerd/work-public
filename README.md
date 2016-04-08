@@ -1,2 +1,2 @@
 # work-public
-Contains files that people may link to for my job.
+Contains files that people might want to access during trainings, seminars, etc.
