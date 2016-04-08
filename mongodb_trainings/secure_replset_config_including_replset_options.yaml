@@ -1,0 +1,22 @@
+# Created for MongoDB public trainings
+systemLog:
+  destination: file
+  path: "/data/secure_replset/1/mongod.log"
+  logAppend: true
+storage:
+  dbPath: "/data/secure_replset/1"
+  wiredTiger:
+    engineConfig:
+      cacheSizeGB: 1
+net:
+  port: 28001
+processManagement:
+  fork: true
+setParameter:
+  enableLocalhostAuthBypass: false
+security:
+  keyFile: /data/secure_replset/1/mongodb-keyfile
+replication:
+  oplogSizeMB: 100
+  replSetName: "VAULT"
+  enableMajorityReadConcern: true
